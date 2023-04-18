@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --background-color:#A5A0C0;
+    --text-color: #000;
+    --table-border-color: rgb(6, 6, 6);
+    --table-zebra-color-1: #A7B1D4;
+    --table-zebra-color-2: #D1D0DE;
+    --button-color:#2A9D8F;
+}
+
+.flex{
+    display: flex;
+}
+
+body{
+    width: 70%;
+    min-width: 600px;
+    margin: 2rem auto;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{
+    border-color: black;
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+#table-list{
+    table-layout: fixed;
+}
+
+#table-list, tr, td, th{
+    border: 2px solid var(--table-border-color);
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even){
+    background-color: var(--table-zebra-color-1);
+}
+tbody tr:nth-child(odd){
+    background-color: var(--table-zebra-color-2);
+}
+
+th,.data, td{
+    padding: 15px 10px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.table-header{
+    position:sticky;
+    top: 0;
+    background-color: #1B4645;
+    color: #ddd;
+}
+
+.data{
+    width: calc(100%/5);
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.manage-col{
+    font-size: 12px;
+}
+
+.navigate{
+    justify-content: space-between;
+    margin: 2rem;
+    font-weight: 900;
+}
+
+.navigate a, .data a{
+    color: #1B4645;
+}
+.navigate a:hover, .data a:hover{
+    color: var(--button-color);
+}
+
+
+/* =================================================================*/
+/* ================ Create post styles =============================*/
+/* =================================================================*/
+form{
+    padding: 15px;
+    font-size: 24px;
+}
+input[type=text], #Content, #tags {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    outline: none;
+  }
+
+  #tags option{
+    font-size: 18px;
+    padding: 5px;
+    outline: none;
+    border: none;
+  }
+
+
+  input[type=text]:focus, #tags:focus ,#tags option:focus,
+   #Content:focus{
+    background-color: #ddd;
+    outline: none;
+  }
+
+  
+  form label {
+    margin-bottom: 25px;
+    font-weight: 600;
+  }
+  
+
+  .submit {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.7;
+  }
+  
+  .submit:hover {
+    opacity:1;
+  }

@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/56c6c5239f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h2>Admin Page</h2>
+    <hr />
+    <div class="flex navigate">
+        <i class="fa-solid fa-arrow-left"> <a href="../index.html">Blogs</a></i>
+        <i class="fa-solid fa-arrow-right"> <a href="create-post.html">Create post</a></i>
+    </div>
+
+    <table id="table-list">
+        <thead>
+            <tr class="table-header">
+                <th>Title</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Date</th>
+                <th>Manage</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+    <script src="js/manage-posts.js"></script>
+</body>
+</html>

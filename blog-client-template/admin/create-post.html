@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create post</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/56c6c5239f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h2>Create post</h2>
+    <hr>
+    <div class="flex navigate">
+        <i class="fa-solid fa-arrow-left"> <a href="index.html">Admin Page</a></i>
+    </div>
+    <form id="create-a-post">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" />
+
+        <label for="author">Author</label>
+        <input type="text" name="author" id="Author" />
+
+        <label for="Content">Content</label>
+        <textarea type="text" rows="10" name="content" id="content"></textarea>
+
+        <label for="tags">Tags</label>
+        <select name="tags" id="tags" multiple>
+            <option value="economy">Economy</option>
+            <option value="politic">Politics</option>
+            <option value="sport">Sport</option>
+            <option value="food">Food</option>
+            <option value="art">Art</option>
+            <option value="academic">Academic</option>
+        </select>
+
+        <input type="submit" id="submit" value="Create" class="submit">
+    </form>
+
+    <script src="js/create-post.js"></script>
+</body>
+</html>
